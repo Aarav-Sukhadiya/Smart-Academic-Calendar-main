@@ -1,0 +1,31 @@
+Time,Monday,Tuesday,Wednesday,Thursday,Friday
+09:00-09:15,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+09:15-09:30,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+09:30-09:45,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+09:45-10:00,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+10:00-10:15,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+10:15-10:30,Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Physics [Neha] [Class A - 2nd Floor],Database Systems [Priya] [Class B - 2nd Floor]
+10:30-10:45,,Physics [Neha] [Class A - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+10:45-11:00,,Physics [Neha] [Class A - 2nd Floor],Database Systems Lab [Priya] [Lab 2 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+11:00-11:15,Database Systems [Priya] [Class B - 2nd Floor],Physics [Neha] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+11:15-11:30,Database Systems [Priya] [Class B - 2nd Floor],Physics [Neha] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+11:30-11:45,Database Systems [Priya] [Class B - 2nd Floor],Physics [Neha] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+11:45-12:00,Database Systems [Priya] [Class B - 2nd Floor],Physics [Neha] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Linear Algebra [Rohan] [Class C - 2nd Floor]
+12:00-12:15,Database Systems [Priya] [Class B - 2nd Floor],,Linear Algebra [Rohan] [Class C - 2nd Floor],,
+12:15-12:30,Database Systems [Priya] [Class B - 2nd Floor],,Linear Algebra [Rohan] [Class C - 2nd Floor],,
+12:30-12:45,,,,,
+12:45-13:00,,,,,
+13:00-13:15,,,,,
+13:15-13:30,,,,,
+13:30-13:45,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+13:45-14:00,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+14:00-14:15,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+14:15-14:30,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+14:30-14:45,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+14:45-15:00,Web Programming [Krish] [Lab 1 - 3rd Floor],Fundamental DSA [Utkarsh] [Class A - 2nd Floor],Web Programming [Krish] [Lab 1 - 3rd Floor],Web Programming Lab [Krish] [Lab 1 - 3rd Floor],Physics Lab [Neha] [Lab 3 - 3rd Floor]
+15:00-15:15,,English Communication [Anjali] [Class B - 2nd Floor],,Web Programming Lab [Krish] [Lab 1 - 3rd Floor],
+15:15-15:30,,English Communication [Anjali] [Class B - 2nd Floor],,Web Programming Lab [Krish] [Lab 1 - 3rd Floor],
+15:30-15:45,,English Communication [Anjali] [Class B - 2nd Floor],,English Communication [Anjali] [Class B - 2nd Floor],
+15:45-16:00,,English Communication [Anjali] [Class B - 2nd Floor],,English Communication [Anjali] [Class B - 2nd Floor],
+16:00-16:15,,English Communication [Anjali] [Class B - 2nd Floor],,English Communication [Anjali] [Class B - 2nd Floor],
+16:15-16:30,,English Communication [Anjali] [Class B - 2nd Floor],,English Communication [Anjali] [Class B - 2nd Floor],

@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# Environment files — contain Firebase keys
+.env
+.env.*.local
+api.txt
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.claude
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,325 @@
+/* react-big-calendar base styles — must precede @tailwind */
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-white text-slate-900 dark:bg-notion-bg dark:text-notion-text antialiased transition-colors duration-200;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .dark .btn {
+    --tw-ring-offset-color: theme('colors.notion.bg');
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 focus:ring-indigo-500 font-semibold shadow-md shadow-indigo-200/50;
+  }
+  .dark .btn-primary {
+    @apply shadow-indigo-900/30;
+  }
+
+  .btn-ghost {
+    @apply btn text-slate-700 hover:bg-slate-100 focus:ring-slate-300;
+  }
+  .dark .btn-ghost {
+    color: theme('colors.notion.muted');
+  }
+  .dark .btn-ghost:hover {
+    background-color: theme('colors.notion.hover');
+    color: theme('colors.notion.text');
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500 font-semibold;
+  }
+  .input {
+    @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-colors;
+  }
+  .dark .input {
+    background-color: theme('colors.notion.sidebar');
+    border-color: theme('colors.notion.border');
+    color: theme('colors.notion.text');
+  }
+  .dark .input::placeholder {
+    color: theme('colors.notion.muted');
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+  }
+  .dark .card {
+    border-color: theme('colors.notion.border');
+    background-color: theme('colors.notion.sidebar');
+  }
+  .skeleton {
+    background: linear-gradient(90deg, #e2e8f0 0%, #f1f5f9 40%, #e2e8f0 80%);
+    background-size: 800px 100%;
+    @apply animate-shimmer rounded-md dark:opacity-20;
+  }
+}
+
+@layer utilities {
+  .dark .bg-white {
+    background-color: theme('colors.notion.sidebar') !important;
+  }
+  .dark .bg-slate-50,
+  .dark .bg-slate-100 {
+    background-color: theme('colors.notion.bg') !important;
+  }
+  .dark .border-slate-200,
+  .dark .border-slate-300 {
+    border-color: theme('colors.notion.border') !important;
+  }
+  .dark .text-slate-900,
+  .dark .text-slate-800,
+  .dark .text-slate-700 {
+    color: theme('colors.notion.text') !important;
+  }
+  .dark .text-slate-600,
+  .dark .text-slate-500,
+  .dark .text-slate-400 {
+    color: theme('colors.notion.muted') !important;
+  }
+  .dark .hover\:bg-slate-50:hover,
+  .dark .hover\:bg-slate-100:hover {
+    background-color: theme('colors.notion.hover') !important;
+  }
+  .dark .text-brand-600,
+  .dark .text-brand-700 {
+    color: theme('colors.notion.blue') !important;
+  }
+  .dark .bg-brand-50 {
+    background-color: theme('colors.notion.active') !important;
+  }
+  .dark .border-brand-500 {
+    border-color: theme('colors.notion.blue') !important;
+  }
+}
+
+/* ============================================
+   react-big-calendar Custom Theme Overrides
+   ============================================ */
+
+.calendar-wrapper .rbc-calendar {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Toolbar */
+.calendar-wrapper .rbc-toolbar {
+  @apply mb-4 flex-wrap gap-2;
+}
+
+.calendar-wrapper .rbc-toolbar button {
+  @apply rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition-all hover:bg-slate-50 hover:text-slate-900;
+}
+
+.dark .calendar-wrapper .rbc-toolbar button {
+  @apply border-notion-border bg-notion-sidebar text-notion-muted;
+}
+
+.dark .calendar-wrapper .rbc-toolbar button:hover {
+  background-color: theme('colors.notion.hover');
+  color: theme('colors.notion.text');
+}
+
+.calendar-wrapper .rbc-toolbar button.rbc-active {
+  @apply bg-indigo-600 border-indigo-600 text-white shadow-sm;
+}
+
+.dark .calendar-wrapper .rbc-toolbar button.rbc-active {
+  @apply bg-indigo-600 border-indigo-600 text-white;
+}
+
+.calendar-wrapper .rbc-toolbar .rbc-toolbar-label {
+  @apply text-sm font-semibold text-slate-800;
+}
+
+.dark .calendar-wrapper .rbc-toolbar .rbc-toolbar-label {
+  color: theme('colors.notion.text');
+}
+
+/* Headers */
+.calendar-wrapper .rbc-header {
+  @apply border-b border-slate-200 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider;
+}
+
+.dark .calendar-wrapper .rbc-header {
+  border-color: theme('colors.notion.border');
+  color: theme('colors.notion.muted');
+}
+
+/* Time gutter */
+.calendar-wrapper .rbc-time-gutter .rbc-timeslot-group {
+  @apply border-b border-slate-100;
+}
+
+.calendar-wrapper .rbc-time-content > .rbc-time-gutter .rbc-label {
+  @apply text-[10px] text-slate-400 px-2;
+}
+
+.dark .calendar-wrapper .rbc-time-content > .rbc-time-gutter .rbc-label {
+  color: theme('colors.notion.muted');
+}
+
+/* Grid lines */
+.calendar-wrapper .rbc-time-content {
+  @apply border-t border-slate-200;
+}
+
+.dark .calendar-wrapper .rbc-time-content {
+  border-color: theme('colors.notion.border');
+}
+
+.calendar-wrapper .rbc-timeslot-group {
+  @apply border-b border-slate-100;
+}
+
+.dark .calendar-wrapper .rbc-timeslot-group {
+  border-color: theme('colors.notion.border');
+}
+
+.calendar-wrapper .rbc-day-slot .rbc-time-slot {
+  border-top-color: transparent;
+}
+
+/* Day columns */
+.calendar-wrapper .rbc-day-bg + .rbc-day-bg {
+  @apply border-l border-slate-200;
+}
+
+.dark .calendar-wrapper .rbc-day-bg + .rbc-day-bg {
+  border-color: theme('colors.notion.border');
+}
+
+/* Today highlight */
+.calendar-wrapper .rbc-today {
+  @apply bg-indigo-50/40;
+}
+
+.dark .calendar-wrapper .rbc-today {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+/* Current time indicator */
+.calendar-wrapper .rbc-current-time-indicator {
+  @apply bg-rose-500;
+  height: 2px;
+}
+
+/* Off-range dates */
+.calendar-wrapper .rbc-off-range-bg {
+  @apply bg-slate-50;
+}
+
+.dark .calendar-wrapper .rbc-off-range-bg {
+  background-color: theme('colors.notion.bg');
+}
+
+/* Month view cells */
+.calendar-wrapper .rbc-month-view {
+  @apply border border-slate-200 rounded-lg overflow-hidden;
+}
+
+.dark .calendar-wrapper .rbc-month-view {
+  border-color: theme('colors.notion.border');
+}
+
+.calendar-wrapper .rbc-month-row + .rbc-month-row {
+  @apply border-t border-slate-200;
+}
+
+.dark .calendar-wrapper .rbc-month-row + .rbc-month-row {
+  border-color: theme('colors.notion.border');
+}
+
+/* Event rendering - override default rbc styles */
+.calendar-wrapper .rbc-event {
+  @apply border-0 p-0 rounded-md;
+  background-color: transparent !important;
+}
+
+.calendar-wrapper .rbc-event.rbc-selected {
+  @apply ring-2 ring-indigo-400 ring-offset-1;
+}
+
+.calendar-wrapper .rbc-event-label {
+  display: none;
+}
+
+/* Agenda view */
+.calendar-wrapper .rbc-agenda-view table.rbc-agenda-table {
+  @apply border border-slate-200;
+}
+
+.dark .calendar-wrapper .rbc-agenda-view table.rbc-agenda-table {
+  border-color: theme('colors.notion.border');
+}
+
+.calendar-wrapper .rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+  @apply border-b border-slate-200 bg-slate-50 text-xs font-semibold text-slate-500 px-3 py-2;
+}
+
+.dark .calendar-wrapper .rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+  border-color: theme('colors.notion.border');
+  background-color: theme('colors.notion.bg');
+  color: theme('colors.notion.muted');
+}
+
+.calendar-wrapper .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+  @apply border-b border-slate-100 px-3 py-2 text-sm;
+}
+
+.dark .calendar-wrapper .rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+  border-color: theme('colors.notion.border');
+  color: theme('colors.notion.text');
+}
+
+/* Selection overlay */
+.calendar-wrapper .rbc-slot-selection {
+  @apply bg-indigo-200/50 border border-indigo-300 rounded;
+}
+
+.dark .calendar-wrapper .rbc-slot-selection {
+  @apply bg-indigo-800/30 border-indigo-700;
+}
+
+/* "show more" link in month view */
+.calendar-wrapper .rbc-show-more {
+  @apply text-xs font-medium text-indigo-600 hover:text-indigo-800 bg-transparent;
+}
+
+.dark .calendar-wrapper .rbc-show-more {
+  color: theme('colors.notion.blue');
+}
+
+/* Smooth entrance animation */
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-in {
+  animation: animate-in 0.2s ease-out;
+}
